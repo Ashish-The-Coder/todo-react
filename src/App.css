@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+.hover-underline:hover{
+    text-decoration: underline !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-text{
+    text-transform: uppercase;
+    font-family: 'Squada One', cursive;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hover-bold{
+    transition: all 0.2s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hover-bold:hover{
+    font-weight: bold !important;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 767px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div.links-div{
+        margin: 20px 0;
+    }
+    footer>div{
+        margin-left: 100px !important;
+    }
 }
